@@ -75,9 +75,10 @@ $dialog_padding: $base_padding * 4 $base_padding * 3 $base_padding * 3 $base_pad
 
 /* Run Dialog */
 .run-dialog {
+  padding: $base_padding * 3; // Yaru change: padding match to quick settings 
+  border-radius: $yaru_menu_border_radius; // Yaru change: match border-radius to quick settings
   .modal-dialog-content-box {
-    margin-top: $base_padding * 4;
-    margin-bottom: $base_padding * 2;
+    margin-top: $base_padding * 3;
   }
   .run-dialog-entry { width: 20em; }
   .run-dialog-description {
