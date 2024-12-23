@@ -1,5 +1,7 @@
 /* Modal Dialogs */
 
+$dialog_padding: $base_padding * 4 $base_padding * 3 $base_padding * 3 $base_padding * 3; 
+
 .headline {
   @extend %title_4;
 }
@@ -87,8 +89,9 @@
 /* Password or Authentication Dialog */
 
 .prompt-dialog {
-  width: 28em;
-
+  width: 26em;
+  padding: $dialog_padding;  // Yaru change: padding match to quick settings
+  border-radius: $yaru_menu_border_radius; // Yaru change: match border-radius to quick settings 
   .modal-dialog-content-box {
     margin-bottom: $base_margin * 6;
   }
