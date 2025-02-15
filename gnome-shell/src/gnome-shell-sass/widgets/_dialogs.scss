@@ -1,5 +1,6 @@
 /* Modal Dialogs */
 
+// Yaru Custom Definition
 $dialog_padding: $base_padding * 4 $base_padding * 3 $base_padding * 3 $base_padding * 3; 
 
 .headline {
@@ -27,8 +28,8 @@ $dialog_padding: $base_padding * 4 $base_padding * 3 $base_padding * 3 $base_pad
 /* End Session Dialog */
 .end-session-dialog {
   width: 24em;
-  border-radius: $yaru_menu_border_radius;
-  padding: $base_padding * 3;
+  border-radius: $yaru_menu_border_radius; // Yaru Change: Override default radius
+  padding: $base_padding * 3; // Yaru Change: Override default padding
   .end-session-dialog-battery-warning,
   .dialog-list-title {
     color: $warning_color;
@@ -78,7 +79,7 @@ $dialog_padding: $base_padding * 4 $base_padding * 3 $base_padding * 3 $base_pad
   padding: $base_padding * 3; // Yaru change: padding match to quick settings 
   border-radius: $yaru_menu_border_radius; // Yaru change: match border-radius to quick settings
   .modal-dialog-content-box {
-    margin-top: $base_padding * 3;
+    margin-top: $base_padding * 3; // Yaru Change
   }
   .run-dialog-entry { width: 20em; }
   .run-dialog-description {
@@ -91,7 +92,7 @@ $dialog_padding: $base_padding * 4 $base_padding * 3 $base_padding * 3 $base_pad
 /* Password or Authentication Dialog */
 
 .prompt-dialog {
-  width: 26em;
+  width: 26em; // Yaru Change: Decrease from 28 to 26 em
   padding: $dialog_padding;  // Yaru change: padding match to quick settings
   border-radius: $yaru_menu_border_radius; // Yaru change: match border-radius to quick settings 
   .modal-dialog-content-box {
